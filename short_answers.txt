@@ -1,0 +1,28 @@
+1. What does O(n) mean? O(n^2)?
+   The Big-O notation is used to describe how an algorithm's performance scales in 
+   the worst case as the input size increase. O(n) means that it will scale linearly, 
+   proportional to the input size 'n'; O(n^2) means it will scale quadratically.
+
+2. Describe the quick sort algorithm.
+   From the list, choose an element and call it the pivot.  Compare all the elements 
+   in the list to the pivot.  Move any element smaller than the pivot to before
+   the pivot, and any larger element to behind the pivot. The pivot is then in its 
+   correct position.  Repeat the same steps for the two sublists of elements 
+   smaller and larger than the pivot.  In the base case, the size of the list will
+   be zero or one element which does not need to be sorted.
+
+3. In C, what is a pointer?
+   A pointer is a variable that contains (if valid and not null) the memory location of
+   an object.  Pointers may come with type information about the object that it points to.
+
+4. What is the difference between Stack and Heap memory?
+   Memory allocation is done by the operating system in the stack as opposed to manually, by using
+   system calls, in the heap.  This leads to some behavior differences: the stack is limited in space
+   while the heap is much larger; variables on the stack is local in scope and will deallocate when
+   its thread exit while variables on the heap is global; variables is faster to allocate on the stack
+   compared to the heap; and allocation size is known at compile time for the stack but can 
+   be done dynamically for the heap.
+
+5. What is the purpose of a garbage collector?
+   The garbage collector manage memory deallocation for the user.  This allows for the use 
+   of dynamically allocated memory without needing to manually free it later.
